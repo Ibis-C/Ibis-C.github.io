@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="(min-width:380px)">
+    <link rel="stylesheet" href="css/form.css" type="text/css" media="(min-width:380px)">
+    <!--Metadatos. Datos que no verá el usuario-->
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="autobio.html">Quién soy</a></li>
+                <li><a href="galeria.html">Galería</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2><strong>Contáctame</strong></h2>
+        <form id="contacto" name="contacto" method="post" action="procesa.php" target="_blank">
+            <fieldset>
+                <legend>Uso de cajas de texto - Nombre</legend>
+                Nombre: <input type="text" name="nombre">
+                Apellidos: <input type="text" name="apellidos">
+            </fieldset>
+            <fieldset>
+                <legend>Uso de Radio Buttons - Género</legend>
+                <input type="radio" name="radio" id="radio1">Masculino
+                <input type="radio" name="radio" id="radio2">Femenenino
+            </fieldset>
+            <fieldset>
+                <legend>Uso del CheckBox - Intererses</legend>
+                <input type="checkbox" name="deporte" value="Deportes">Hacer deportes
+                <input type="checkbox" name="tv" value="Televisión">Ver Televisión
+                <input type="checkbox" name="ejercicio" value="Ejercicio">Hacer ejercicio
+            </fieldset>
+            <fieldset>
+                <legend>Uso del Select - Estudios Actuales</legend>
+                <select name="select">
+                    <option value="value1">Secundaria</option>
+                    <option value="value2">Bachilllerato</option>
+                    <option value="value3">Licenciatura</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Uso del List - Navegador usado</legend>
+                <label>
+                    Selecciona el buscador utilizado:
+                    <input list="buscadores" name="mis_buscadores">
+                </label>
+                <datalist id="buscadores">
+                    <option value="Chrome"></option>
+                    <option value="Firefox"></option>
+                    <option value="Internet Explorer"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                    <option value="Microsoft Edge"></option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                
+            </fieldset>
+            <!-- <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name" value="Nombre">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" name="user_mail" id="mail" value="xxxxx@xxxx.xxxx">
+                </li>
+                <li>
+                    <label for="msg">Mensaje:</label>
+                    <textarea name="user_message" id="msg" cols="30" rows="10">Escribe aquí tu mensaje.</textarea>
+                </li>
+            </ul> -->
+        </form>
+    </section>
+    <footer>
+        Tizimin, Yucatan. Agostos, 2022
+    </footer>
+</body>
+
+</html>
